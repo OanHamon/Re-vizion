@@ -1,0 +1,28 @@
+{
+  "maxHealth": 100,
+  "livesPerRound": 1,
+  "defaultWeapon": "pistol",
+  "loadout": ["pistol", "assault_rifle", "shotgun", "sniper"],
+  "characters": ["character.student_a", "character.student_b"],
+  "body": {
+    "height": 1.8,
+    "radius": 0.35,
+    "eyeHeight": 1.6,
+    "headHeight": 0.32
+  },
+  "movement": {
+    "walkSpeed": 8,
+    "groundAcceleration": 90,
+    "airAcceleration": 22,
+    "jumpVelocity": 7.5,
+    "gravity": 22,
+    "aimSpeedFactor": 0.6,
+    "dashSpeed": 18,
+    "dashSeconds": 0.18,
+    "dashCooldownSeconds": 2.5,
+    "stepHeight": 0.55
+  },
+  "controls": {
+    "mouseSensitivity": 0.0022
+  }
+}

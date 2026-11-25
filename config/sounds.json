@@ -1,0 +1,228 @@
+{
+  "masterVolume": 0.7,
+  "sounds": {
+    "ui.click": { "volume": 0.5, "pitchJitter": 0.04, "layers": [{ "wave": "triangle", "freq": [660, 540], "duration": 0.07, "gain": 0.5 }] },
+    "ui.back": { "volume": 0.5, "layers": [{ "wave": "triangle", "freq": [520, 360], "duration": 0.09, "gain": 0.5 }] },
+
+    "quiz.deal": {
+      "volume": 0.5,
+      "layers": [
+        { "wave": "noise", "duration": 0.45, "attack": 0.12, "gain": 0.35, "filter": { "type": "bandpass", "freq": [500, 2400], "q": 1.2 } },
+        { "wave": "sine", "freq": [392, 392], "duration": 0.18, "gain": 0.25, "delay": 0.32 },
+        { "wave": "sine", "freq": [523, 523], "duration": 0.18, "gain": 0.25, "delay": 0.43 },
+        { "wave": "sine", "freq": [659, 659], "duration": 0.22, "gain": 0.25, "delay": 0.54 }
+      ]
+    },
+    "quiz.doubleOrNothing": {
+      "volume": 0.55,
+      "layers": [
+        { "wave": "sine", "freq": [880, 880], "duration": 0.5, "gain": 0.3 },
+        { "wave": "sine", "freq": [1175, 1175], "duration": 0.5, "gain": 0.25, "delay": 0.08 },
+        { "wave": "sine", "freq": [1568, 1568], "duration": 0.6, "gain": 0.22, "delay": 0.16 },
+        { "wave": "triangle", "freq": [110, 98], "duration": 0.7, "gain": 0.35 }
+      ]
+    },
+    "quiz.pick": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "sine", "freq": [520, 780], "duration": 0.12, "gain": 0.5 },
+        { "wave": "triangle", "freq": [1040, 1040], "duration": 0.12, "gain": 0.2, "delay": 0.05 }
+      ]
+    },
+    "quiz.correct": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "sine", "freq": [659, 659], "duration": 0.2, "gain": 0.45 },
+        { "wave": "sine", "freq": [880, 880], "duration": 0.24, "gain": 0.45, "delay": 0.09 },
+        { "wave": "sine", "freq": [1319, 1319], "duration": 0.4, "gain": 0.35, "delay": 0.18 },
+        { "wave": "triangle", "freq": [1319, 1319], "duration": 0.3, "gain": 0.12, "delay": 0.18 }
+      ]
+    },
+    "quiz.wrong": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "triangle", "freq": [330, 262], "duration": 0.28, "gain": 0.45 },
+        { "wave": "sine", "freq": [233, 196], "duration": 0.36, "gain": 0.4, "delay": 0.12 }
+      ]
+    },
+    "quiz.timeout": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "triangle", "freq": [523, 262], "duration": 0.5, "gain": 0.4 },
+        { "wave": "noise", "duration": 0.3, "gain": 0.12, "filter": { "type": "lowpass", "freq": [1200, 300] } }
+      ]
+    },
+    "quiz.malus": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "sine", "freq": [130, 70], "duration": 0.4, "gain": 0.6 },
+        { "wave": "noise", "duration": 0.25, "gain": 0.2, "filter": { "type": "lowpass", "freq": [500, 120] } }
+      ]
+    },
+    "quiz.tick": { "volume": 0.35, "layers": [{ "wave": "sine", "freq": [1046, 1046], "duration": 0.05, "gain": 0.5 }] },
+    "quiz.endTick": { "volume": 0.45, "layers": [{ "wave": "triangle", "freq": [740, 740], "duration": 0.1, "gain": 0.5 }] },
+
+    "match.countdown": { "volume": 0.55, "layers": [{ "wave": "sine", "freq": [523, 523], "duration": 0.16, "gain": 0.5 }, { "wave": "triangle", "freq": [523, 523], "duration": 0.12, "gain": 0.15 }] },
+    "match.go": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "sine", "freq": [784, 784], "duration": 0.35, "gain": 0.45 },
+        { "wave": "sine", "freq": [1046, 1046], "duration": 0.4, "gain": 0.35 },
+        { "wave": "triangle", "freq": [196, 196], "duration": 0.3, "gain": 0.25 }
+      ]
+    },
+
+    "shot.default": {
+      "volume": 0.5,
+      "pitchJitter": 0.06,
+      "layers": [
+        { "wave": "triangle", "freq": [700, 200], "duration": 0.14, "gain": 0.4 },
+        { "wave": "noise", "duration": 0.1, "gain": 0.3, "filter": { "type": "bandpass", "freq": [2000, 700], "q": 0.8 } }
+      ]
+    },
+    "shot.pistol": {
+      "volume": 0.55,
+      "pitchJitter": 0.05,
+      "layers": [
+        { "wave": "noise", "duration": 0.1, "gain": 0.55, "filter": { "type": "bandpass", "freq": [2200, 700], "q": 0.9 } },
+        { "wave": "sine", "freq": [220, 70], "duration": 0.09, "gain": 0.45 }
+      ]
+    },
+    "shot.assault_rifle": {
+      "volume": 0.45,
+      "pitchJitter": 0.07,
+      "layers": [
+        { "wave": "noise", "duration": 0.07, "gain": 0.55, "filter": { "type": "bandpass", "freq": [1800, 600], "q": 0.9 } },
+        { "wave": "sine", "freq": [170, 60], "duration": 0.06, "gain": 0.4 }
+      ]
+    },
+    "shot.shotgun": {
+      "volume": 0.6,
+      "pitchJitter": 0.04,
+      "layers": [
+        { "wave": "noise", "duration": 0.32, "gain": 0.6, "filter": { "type": "lowpass", "freq": [3000, 250] } },
+        { "wave": "sine", "freq": [110, 40], "duration": 0.28, "gain": 0.55 },
+        { "wave": "noise", "duration": 0.06, "gain": 0.2, "delay": 0.38, "filter": { "type": "bandpass", "freq": [2600, 2600], "q": 3 } }
+      ]
+    },
+    "shot.sniper": {
+      "volume": 0.6,
+      "pitchJitter": 0.03,
+      "layers": [
+        { "wave": "noise", "duration": 0.5, "gain": 0.55, "filter": { "type": "bandpass", "freq": [2600, 300], "q": 0.7 } },
+        { "wave": "sine", "freq": [140, 35], "duration": 0.45, "gain": 0.55 },
+        { "wave": "sine", "freq": [1800, 900], "duration": 0.08, "gain": 0.15 }
+      ]
+    },
+    "shot.bubble_launcher": {
+      "volume": 0.5,
+      "pitchJitter": 0.1,
+      "layers": [
+        { "wave": "sine", "freq": [300, 900], "duration": 0.16, "gain": 0.5 },
+        { "wave": "sine", "freq": [600, 1400], "duration": 0.1, "gain": 0.2, "delay": 0.04 }
+      ]
+    },
+    "shot.beam": {
+      "volume": 0.4,
+      "pitchJitter": 0.03,
+      "layers": [
+        { "wave": "sawtooth", "freq": [900, 700], "duration": 0.12, "gain": 0.15, "filter": { "type": "lowpass", "freq": [2000, 2000] } },
+        { "wave": "sine", "freq": [1400, 1100], "duration": 0.12, "gain": 0.25 }
+      ]
+    },
+    "shot.crossbow": {
+      "volume": 0.5,
+      "pitchJitter": 0.05,
+      "layers": [
+        { "wave": "triangle", "freq": [260, 120], "duration": 0.12, "gain": 0.5 },
+        { "wave": "noise", "duration": 0.18, "gain": 0.25, "filter": { "type": "bandpass", "freq": [1200, 3000], "q": 1.5 } }
+      ]
+    },
+
+    "combat.empty": { "volume": 0.4, "layers": [{ "wave": "square", "freq": [1400, 1200], "duration": 0.025, "gain": 0.2 }] },
+    "combat.reload": {
+      "volume": 0.45,
+      "layers": [
+        { "wave": "noise", "duration": 0.05, "gain": 0.4, "filter": { "type": "bandpass", "freq": [3000, 3000], "q": 4 } },
+        { "wave": "noise", "duration": 0.06, "gain": 0.35, "delay": 0.22, "filter": { "type": "bandpass", "freq": [1800, 1800], "q": 4 } }
+      ]
+    },
+    "combat.reloaded": {
+      "volume": 0.45,
+      "layers": [
+        { "wave": "triangle", "freq": [900, 900], "duration": 0.05, "gain": 0.4 },
+        { "wave": "triangle", "freq": [1200, 1200], "duration": 0.06, "gain": 0.4, "delay": 0.06 }
+      ]
+    },
+    "combat.switch": { "volume": 0.4, "layers": [{ "wave": "noise", "duration": 0.08, "gain": 0.4, "filter": { "type": "bandpass", "freq": [1500, 2500], "q": 2 } }] },
+    "combat.hit": { "volume": 0.45, "cooldownMs": 40, "pitchJitter": 0.05, "layers": [{ "wave": "sine", "freq": [1500, 1300], "duration": 0.05, "gain": 0.5 }] },
+    "combat.headshot": {
+      "volume": 0.5,
+      "cooldownMs": 40,
+      "layers": [
+        { "wave": "sine", "freq": [1800, 1800], "duration": 0.06, "gain": 0.45 },
+        { "wave": "sine", "freq": [2400, 2400], "duration": 0.1, "gain": 0.4, "delay": 0.035 }
+      ]
+    },
+    "combat.kill": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "sine", "freq": [659, 659], "duration": 0.14, "gain": 0.4 },
+        { "wave": "sine", "freq": [988, 988], "duration": 0.16, "gain": 0.4, "delay": 0.07 },
+        { "wave": "sine", "freq": [1319, 1319], "duration": 0.3, "gain": 0.35, "delay": 0.14 }
+      ]
+    },
+    "combat.hurt": {
+      "volume": 0.5,
+      "cooldownMs": 80,
+      "layers": [
+        { "wave": "sine", "freq": [180, 90], "duration": 0.18, "gain": 0.6 },
+        { "wave": "noise", "duration": 0.12, "gain": 0.2, "filter": { "type": "lowpass", "freq": [900, 200] } }
+      ]
+    },
+    "combat.death": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "triangle", "freq": [440, 110], "duration": 0.7, "gain": 0.45 },
+        { "wave": "sine", "freq": [220, 55], "duration": 0.8, "gain": 0.4 }
+      ]
+    },
+    "combat.grenadeThrow": {
+      "volume": 0.45,
+      "layers": [
+        { "wave": "noise", "duration": 0.22, "attack": 0.04, "gain": 0.35, "filter": { "type": "bandpass", "freq": [600, 2200], "q": 1.5 } },
+        { "wave": "square", "freq": [2400, 2200], "duration": 0.03, "gain": 0.12, "delay": 0.02 }
+      ]
+    },
+    "combat.explosion": {
+      "volume": 0.9,
+      "layers": [
+        { "wave": "noise", "duration": 0.08, "attack": 0.002, "gain": 0.9, "filter": { "type": "highpass", "freq": [1800, 900] } },
+        { "wave": "noise", "duration": 1.6, "attack": 0.004, "gain": 0.85, "filter": { "type": "lowpass", "freq": [3200, 90] } },
+        { "wave": "sine", "freq": [140, 32], "duration": 1.1, "gain": 0.75 },
+        { "wave": "triangle", "freq": [85, 40], "duration": 0.8, "gain": 0.35, "delay": 0.03 },
+        { "wave": "noise", "duration": 1.4, "attack": 0.25, "gain": 0.3, "delay": 0.3, "filter": { "type": "lowpass", "freq": [600, 80] } },
+        { "wave": "noise", "duration": 0.9, "attack": 0.05, "gain": 0.18, "delay": 0.42, "filter": { "type": "bandpass", "freq": [900, 300], "q": 0.8 } }
+      ]
+    },
+
+    "results.victory": {
+      "volume": 0.6,
+      "layers": [
+        { "wave": "sine", "freq": [523, 523], "duration": 0.18, "gain": 0.4 },
+        { "wave": "sine", "freq": [659, 659], "duration": 0.18, "gain": 0.4, "delay": 0.12 },
+        { "wave": "sine", "freq": [784, 784], "duration": 0.2, "gain": 0.4, "delay": 0.24 },
+        { "wave": "sine", "freq": [1046, 1046], "duration": 0.6, "gain": 0.4, "delay": 0.36 },
+        { "wave": "triangle", "freq": [262, 262], "duration": 0.8, "gain": 0.15, "delay": 0.36 }
+      ]
+    },
+    "results.defeat": {
+      "volume": 0.55,
+      "layers": [
+        { "wave": "triangle", "freq": [392, 392], "duration": 0.25, "gain": 0.4 },
+        { "wave": "triangle", "freq": [330, 330], "duration": 0.25, "gain": 0.4, "delay": 0.2 },
+        { "wave": "triangle", "freq": [262, 247], "duration": 0.6, "gain": 0.4, "delay": 0.4 }
+      ]
+    }
+  }
+}

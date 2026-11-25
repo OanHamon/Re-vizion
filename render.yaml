@@ -1,0 +1,11 @@
+# Serveur de match sur Render (offre gratuite). Render lit ce fichier via « New > Blueprint ».
+# Le client du jeu n'est pas servi ici : il est publié sur itch.io et se connecte en wss:// sur /ws.
+services:
+  - type: web
+    name: reviz-arena-match
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build:server
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true

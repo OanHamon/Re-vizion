@@ -1,0 +1,110 @@
+/* Thème unique : TOUTES les couleurs de l'interface sont ici.
+   Pastel sur papier : fond beige, couleurs douces, jamais de néon ni de thème sombre. */
+:root {
+  /* Papier et encre */
+  --paper: #f3eee2;
+  --paper-light: #faf7f0;
+  --paper-deep: #e6dfcf;
+  --paper-dot: #ddd4c1;
+  --ink: #3a3846;
+  --ink-soft: #7d788b;
+  --ink-faint: #b3adbd;
+
+  /* Familles de cartes : fond pastel, ton profond (ombre de papier, motif) */
+  --family-attack: #ffcfae;
+  --family-attack-deep: #eba077;
+  --family-defense: #bfe8ef;
+  --family-defense-deep: #7cc2cf;
+  --family-mobility: #cdeccb;
+  --family-mobility-deep: #8cc795;
+  --family-weapon: #fbe8a8;
+  --family-weapon-deep: #dcb853;
+  --family-fallback: #e4dff0;
+  --family-fallback-deep: #b6aecb;
+
+  /* Raretés : couleur du contour */
+  --rarity-common: #b8b4bf;
+  --rarity-rare: #8db3f2;
+  --rarity-epic: #f0a1cb;
+  --rarity-legendary: #ad94ee;
+  --rarity-fallback: #b8b4bf;
+
+  /* Retours */
+  --good: #a6dcb4;
+  --good-deep: #5fae76;
+  --bad: #f4b4b0;
+  --bad-deep: #d97a74;
+  --warn: #f7d9a8;
+
+  /* Halos et motifs du fond */
+  --halo: #fff6e6;
+  --halo-dod: #eadffd;
+  --shape-1: #f6d9c6;
+  --shape-2: #cfe9ec;
+  --shape-3: #dcebd5;
+  --shape-4: #ece0f6;
+
+  /* Scène 3D (armurerie, arène) : lues par le code et passées à Three.js */
+  --scene-sky: #f6f1e6;
+  --scene-ground: #cdbfa6;
+  --scene-floor: #e9e0ce;
+  --scene-pedestal: #ded4c0;
+  --scene-block-1: #f6cbb0;
+  --scene-block-2: #bde3ea;
+  --scene-block-3: #cfe7c9;
+  --scene-block-4: #dccff3;
+  --scene-wall: #e2d7c3;
+  --scene-target: #f2b8b0;
+  --scene-target-head: #f7d7a6;
+  --scene-tracer: #fff3c9;
+  --scene-laser: #ff8fa3;
+  --scene-flash: #fff1b8;
+  /* éclats des éléments cassables, par matériau (config/materials.json) */
+  --material-glass: #cfe6f3;
+  --material-wood: #dcb68c;
+  --material-stone: #d3cabc;
+  /* explosion de grenade (pastel, jamais néon) */
+  --blast-core: #fffaf0;
+  --blast-hot: #ffe7a8;
+  --blast-spark: #fff3c4;
+  --blast-smoke: #ece5da;
+  --blast-smoke-dark: #d6ccbf;
+  --blast-scorch: #a59c90;
+  /* flash d'écran d'une explosion */
+  --hud-blast-flash: rgba(255, 249, 232, 0.92);
+
+  /* Ambiance des cartes (arenas.json « look.theme ») : ciel, brouillard, lumière venant du sol, couleur de la carte dans le choix */
+  --map-city-sky: #f4eee6;
+  --map-city-fog: #efe6dc;
+  --map-city-ground: #d8c8b6;
+  --map-city-tag: #f5cbc6;
+  --map-forest-sky: #e9f1ec;
+  --map-forest-fog: #e3ede4;
+  --map-forest-ground: #c4d3b0;
+  --map-forest-tag: #cdeccb;
+  --map-mine-sky: #e9e2ee;
+  --map-mine-fog: #e4dceb;
+  --map-mine-ground: #d4c4bc;
+  --map-mine-tag: #dccff3;
+  --map-default-tag: #f6e7b5;
+
+  /* Joueurs (DA : bleu = joueur 1, rose = joueur 2 ; 3 à 5 pour les salons à plusieurs) */
+  --player-1: #8fb3f2;
+  --player-2: #f2a1c6;
+  --player-3: #b9a3ec;
+  --player-4: #f3b98c;
+  --player-5: #86d1b6;
+
+  /* HUD du combat */
+  --hud-panel: rgba(250, 247, 240, 0.86);
+  --hud-health: #8fd4a0;
+  --hud-shield: #8fdcea;
+  --hud-hit: #3a3846;
+  --hud-kill: #d97a74;
+  --hud-headshot: #ad94ee;
+  --hud-scope: rgba(58, 56, 70, 0.92);
+
+  /* Typographie (pas de police téléchargée : polices géométriques déjà installées) */
+  --font-display: 'Century Gothic', 'Futura', 'Avenir Next', 'Avenir', 'Segoe UI Variable Display', system-ui, sans-serif;
+  --font-text: 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}

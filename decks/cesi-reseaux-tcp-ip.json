@@ -1,0 +1,318 @@
+{
+  "deck": {
+    "id": "cesi-reseaux-tcp-ip",
+    "titre": "Réseaux : modèle TCP/IP",
+    "matiere": "Informatique",
+    "niveau": "Bac+2",
+    "auteur": "tidi998",
+    "version": 1,
+    "langue": "fr"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de couches compte le modèle TCP/IP classique ?",
+      "choix": ["3", "4", "5", "7"],
+      "reponse": 1,
+      "explication": "Le modèle TCP/IP classique a 4 couches : Accès réseau, Internet, Transport, Application. C'est le modèle OSI qui en compte 7.",
+      "tags": ["couches"]
+    },
+    {
+      "id": "q002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Que signifie le sigle IP ?",
+      "choix": ["Internet Protocol", "Internal Process", "Interface Port", "Information Packet"],
+      "reponse": 0,
+      "explication": "IP = Internet Protocol. C'est le protocole de la couche Internet : il adresse les paquets et les achemine de réseau en réseau.",
+      "tags": ["protocoles", "ip"]
+    },
+    {
+      "id": "q003",
+      "type": "vrai_faux",
+      "difficulte": 1,
+      "enonce": "TCP est un protocole orienté connexion.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 0,
+      "explication": "TCP ouvre une connexion (poignée de main en trois temps) avant d'échanger des données, puis la ferme proprement.",
+      "tags": ["protocoles", "transport"]
+    },
+    {
+      "id": "q004",
+      "type": "vrai_faux",
+      "difficulte": 1,
+      "enonce": "UDP garantit que les données arrivent dans l'ordre d'envoi.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 1,
+      "explication": "UDP n'a ni accusé de réception, ni remise en ordre, ni retransmission. Ces garanties sont celles de TCP.",
+      "tags": ["protocoles", "transport"]
+    },
+    {
+      "id": "q005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "À quelle couche du modèle TCP/IP appartient HTTP ?",
+      "choix": ["Application", "Transport", "Internet", "Accès réseau"],
+      "reponse": 0,
+      "explication": "HTTP est un protocole applicatif : il définit le dialogue entre un navigateur et un serveur web, et s'appuie sur TCP pour le transport.",
+      "tags": ["protocoles", "couches"]
+    },
+    {
+      "id": "q006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de bits compte une adresse IPv4 ?",
+      "choix": ["16", "32", "64", "128"],
+      "reponse": 1,
+      "explication": "Une adresse IPv4 fait 4 octets de 8 bits, soit 32 bits, écrits en notation décimale pointée (ex. 192.168.1.10).",
+      "tags": ["adressage", "ip"]
+    },
+    {
+      "id": "q007",
+      "type": "vrai_faux",
+      "difficulte": 1,
+      "enonce": "Une adresse MAC identifie une carte réseau.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 0,
+      "explication": "L'adresse MAC (48 bits) est l'identifiant physique d'une interface réseau. Elle sert sur le réseau local, au niveau de la couche Accès réseau.",
+      "tags": ["adressage", "couches"]
+    },
+    {
+      "id": "q008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel protocole traduit un nom de domaine en adresse IP ?",
+      "choix": ["DHCP", "DNS", "ARP", "FTP"],
+      "reponse": 1,
+      "explication": "Le DNS (Domain Name System) résout un nom comme cesi.fr en adresse IP.",
+      "tags": ["protocoles", "services"]
+    },
+    {
+      "id": "q009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de bits compte une adresse IPv6 ?",
+      "choix": ["32", "64", "128", "256"],
+      "reponse": 2,
+      "explication": "Une adresse IPv6 fait 128 bits, écrits en 8 groupes de 4 chiffres hexadécimaux.",
+      "tags": ["adressage", "ip"]
+    },
+    {
+      "id": "q010",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel protocole attribue automatiquement une adresse IP à un poste ?",
+      "choix": ["DNS", "DHCP", "ICMP", "SMTP"],
+      "reponse": 1,
+      "explication": "Le serveur DHCP fournit au poste son adresse IP, son masque, sa passerelle et ses serveurs DNS.",
+      "tags": ["protocoles", "services"]
+    },
+    {
+      "id": "q011",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel est le port par défaut de HTTPS ?",
+      "choix": ["80", "21", "443", "25"],
+      "reponse": 2,
+      "explication": "HTTPS écoute sur le port 443. Le port 80 est celui de HTTP, 21 celui de FTP et 25 celui de SMTP.",
+      "tags": ["ports", "services"]
+    },
+    {
+      "id": "q012",
+      "type": "vrai_faux",
+      "difficulte": 2,
+      "enonce": "La commande ping repose sur le protocole ICMP.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 0,
+      "explication": "ping envoie des messages ICMP « Echo Request » et attend des « Echo Reply ». ICMP fonctionne au niveau de la couche Internet.",
+      "tags": ["protocoles", "outils"]
+    },
+    {
+      "id": "q013",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Comment s'appelle l'unité de données échangée par TCP ?",
+      "choix": ["Trame", "Paquet", "Segment"],
+      "reponse": 2,
+      "explication": "Segment pour TCP (datagramme pour UDP), paquet pour IP, trame pour la couche Accès réseau.",
+      "tags": ["couches", "encapsulation"]
+    },
+    {
+      "id": "q014",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quel protocole trouve l'adresse MAC qui correspond à une adresse IP du réseau local ?",
+      "choix": ["ARP", "DNS", "NAT", "RIP"],
+      "reponse": 0,
+      "explication": "ARP diffuse « Qui a cette IP ? » sur le réseau local ; la machine concernée répond avec son adresse MAC.",
+      "tags": ["protocoles", "adressage"]
+    },
+    {
+      "id": "q015",
+      "type": "vrai_faux",
+      "difficulte": 2,
+      "enonce": "Le DNS utilise le port 53.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 0,
+      "explication": "Le DNS écoute sur le port 53 : en UDP pour la plupart des requêtes, en TCP pour les grosses réponses et les transferts de zone.",
+      "tags": ["ports", "services"]
+    },
+    {
+      "id": "q016",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Dans 192.168.1.0/24, que représente « /24 » ?",
+      "choix": ["Le nombre d'hôtes", "La longueur du masque en bits", "Le numéro de port", "Le nombre de sous-réseaux"],
+      "reponse": 1,
+      "explication": "/24 indique que les 24 premiers bits forment la partie réseau, soit le masque 255.255.255.0.",
+      "tags": ["adressage", "masque"]
+    },
+    {
+      "id": "q017",
+      "type": "vrai_faux",
+      "difficulte": 2,
+      "enonce": "Une adresse en 10.x.x.x est une adresse publique, routable sur Internet.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 1,
+      "explication": "10.0.0.0/8 est une plage privée (RFC 1918), comme 172.16.0.0/12 et 192.168.0.0/16. Ces adresses ne sont pas routées sur Internet.",
+      "tags": ["adressage", "ip"]
+    },
+    {
+      "id": "q018",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "À quelle couche du modèle TCP/IP appartient le protocole UDP ?",
+      "choix": ["Application", "Transport", "Internet", "Accès réseau"],
+      "reponse": 1,
+      "explication": "UDP, comme TCP, gère le transport de bout en bout entre applications.",
+      "tags": ["protocoles", "couches"]
+    },
+    {
+      "id": "q019",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Combien d'adresses d'hôtes utilisables offre un réseau /26 ?",
+      "choix": ["62", "64", "30", "126"],
+      "reponse": 0,
+      "explication": "/26 laisse 6 bits pour les hôtes : 2⁶ = 64 adresses, moins l'adresse du réseau et celle de broadcast, soit 62.",
+      "tags": ["adressage", "masque", "calcul"]
+    },
+    {
+      "id": "q020",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quelle est l'adresse de broadcast du réseau 192.168.10.0/24 ?",
+      "choix": ["192.168.10.0", "192.168.10.1", "192.168.10.255", "255.255.255.0"],
+      "reponse": 2,
+      "explication": "Le broadcast est la dernière adresse du réseau : tous les bits hôtes à 1, soit 192.168.10.255.",
+      "tags": ["adressage", "calcul"]
+    },
+    {
+      "id": "q021",
+      "type": "vrai_faux",
+      "difficulte": 3,
+      "enonce": "Pour une visioconférence en temps réel, UDP est souvent préféré à TCP.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 0,
+      "explication": "En temps réel, une image arrivée en retard ne sert plus. UDP évite les retransmissions de TCP et la latence qu'elles ajoutent.",
+      "tags": ["protocoles", "transport"]
+    },
+    {
+      "id": "q022",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Dans quel ordre se déroule l'ouverture d'une connexion TCP ?",
+      "choix": ["SYN, SYN-ACK, ACK", "SYN, ACK, FIN", "ACK, SYN, SYN-ACK"],
+      "reponse": 0,
+      "explication": "Le client envoie SYN, le serveur répond SYN-ACK, le client confirme avec ACK : c'est la poignée de main en trois temps.",
+      "tags": ["transport", "connexion"]
+    },
+    {
+      "id": "q023",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Quel masque correspond au préfixe /20 ?",
+      "choix": ["255.255.255.0", "255.255.240.0", "255.255.248.0", "255.255.0.0"],
+      "reponse": 1,
+      "explication": "/20 = 8 + 8 + 4 bits à 1. Le troisième octet vaut 11110000 en binaire, soit 240.",
+      "tags": ["adressage", "masque", "calcul"]
+    },
+    {
+      "id": "q024",
+      "type": "vrai_faux",
+      "difficulte": 4,
+      "enonce": "Les machines 192.168.1.70/26 et 192.168.1.130/26 sont dans le même sous-réseau.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 1,
+      "explication": "En /26, les blocs font 64 adresses : .64 à .127, puis .128 à .191. La .70 et la .130 sont dans deux blocs différents.",
+      "tags": ["adressage", "masque", "calcul"]
+    },
+    {
+      "id": "q025",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Un réseau doit accueillir 50 hôtes. Quel est le plus petit préfixe qui convient ?",
+      "choix": ["/25", "/26", "/27", "/28"],
+      "reponse": 1,
+      "explication": "/27 n'offre que 30 hôtes utilisables, c'est trop peu. /26 en offre 62, c'est le plus petit qui suffit.",
+      "tags": ["adressage", "masque", "calcul"]
+    },
+    {
+      "id": "q026",
+      "type": "qcm",
+      "difficulte": 4,
+      "enonce": "Un client envoie un segment TCP de numéro de séquence 1000 contenant 500 octets. Quel numéro d'acquittement le serveur renvoie-t-il ?",
+      "choix": ["1000", "1499", "1500", "1501"],
+      "reponse": 2,
+      "explication": "L'acquittement indique le prochain octet attendu : 1000 + 500 = 1500.",
+      "tags": ["transport", "fiabilite"]
+    },
+    {
+      "id": "q027",
+      "type": "vrai_faux",
+      "difficulte": 4,
+      "enonce": "Quand un poste envoie un paquet vers un autre réseau, la trame porte l'adresse MAC de la passerelle, pas celle de la machine finale.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 0,
+      "explication": "L'adresse MAC ne sert que pour le saut local : le poste résout par ARP la MAC de sa passerelle. L'adresse IP de destination, elle, reste celle de la machine finale.",
+      "tags": ["adressage", "routage", "encapsulation"]
+    },
+    {
+      "id": "q028",
+      "type": "qcm",
+      "difficulte": 5,
+      "enonce": "Un paquet IPv4 part avec un TTL de 3. Combien de routeurs peuvent le relayer avant qu'il soit détruit ?",
+      "choix": ["1", "2", "3", "4"],
+      "reponse": 1,
+      "explication": "Chaque routeur décrémente le TTL avant de relayer. Le 1er le passe à 2, le 2e à 1, le 3e à 0 : il détruit le paquet et renvoie un message ICMP « Time Exceeded ». Seuls 2 routeurs l'ont relayé.",
+      "tags": ["routage", "ip", "piege"]
+    },
+    {
+      "id": "q029",
+      "type": "vrai_faux",
+      "difficulte": 5,
+      "enonce": "Puisque TCP garantit la livraison, une application n'a jamais besoin de vérifier que le serveur a bien traité sa requête.",
+      "choix": ["Vrai", "Faux"],
+      "reponse": 1,
+      "explication": "TCP garantit que les octets arrivent à la machine distante, pas que l'application les a traités : le serveur peut planter juste après la réception. Il faut une confirmation applicative (ex. un code de réponse HTTP).",
+      "tags": ["transport", "fiabilite", "piege"]
+    },
+    {
+      "id": "q030",
+      "type": "qcm",
+      "difficulte": 5,
+      "enonce": "Un poste est configuré en 192.168.1.10/24 avec la passerelle 192.168.2.1. Que se passe-t-il quand il veut joindre Internet ?",
+      "choix": [
+        "Tout fonctionne normalement",
+        "Il ne joint pas sa passerelle, qui est hors de son réseau",
+        "Le DNS corrige la passerelle tout seul",
+        "Le routeur le déplace dans le bon réseau"
+      ],
+      "reponse": 1,
+      "explication": "La passerelle doit être dans le réseau local du poste (ici 192.168.1.0/24). Sinon le poste ne peut pas trouver sa MAC par ARP, et ses paquets vers l'extérieur ne partent pas.",
+      "tags": ["routage", "adressage", "piege"]
+    }
+  ]
+}

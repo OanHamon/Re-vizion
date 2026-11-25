@@ -1,0 +1,8 @@
+{
+  "cellSize": 0.5,
+  "materials": [
+    { "id": "glass", "label": "Verre", "health": 10, "bulletFactor": 1, "blastFactor": 4 },
+    { "id": "wood", "label": "Bois", "health": 60, "bulletFactor": 0.5, "blastFactor": 3 },
+    { "id": "stone", "label": "Pierre", "health": 135, "bulletFactor": 0.1, "blastFactor": 2.7 }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "assets": {
+    "prop.chest": {
+      "voxel": {
+        "path": "models/props/chest.vox",
+        "voxelSize": 0.05,
+        "glow": ["#5fe3f2"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [9, 0, 5.5]
+    },
+    "prop.grenade": {
+      "voxel": {
+        "path": "models/props/grenade.vox",
+        "voxelSize": 0.02,
+        "glow": ["#5fe3f2"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [6, 6, 6]
+    },
+    "character.student_a": {
+      "voxel": {
+        "path": "models/characters/student_a.vox",
+        "voxelSize": 0.025,
+        "glow": [],
+        "tint": ["#ff00ff", "#b000b0"]
+      },
+      "scale": 1,
+      "rotation": [0, 180, 0],
+      "grip": [14, 0, 8],
+      "parts": {
+        "head": { "min": [0, 57, 0], "max": [27, 74, 16], "pivot": [14, 57, 8] },
+        "arm_r": { "min": [0, 31, 0], "max": [6, 56, 16], "pivot": [5, 54, 8] },
+        "arm_l": { "min": [21, 31, 0], "max": [27, 56, 16], "pivot": [23, 54, 8] },
+        "leg_r": { "min": [0, 0, 0], "max": [13, 29, 16], "pivot": [10.5, 29, 8] },
+        "leg_l": { "min": [14, 0, 0], "max": [27, 29, 16], "pivot": [17.5, 29, 8] }
+      }
+    },
+    "character.student_b": {
+      "voxel": {
+        "path": "models/characters/student_b.vox",
+        "voxelSize": 0.025,
+        "glow": [],
+        "tint": ["#ff00ff", "#b000b0"]
+      },
+      "scale": 1,
+      "rotation": [0, 180, 0],
+      "grip": [14, 0, 8],
+      "parts": {
+        "head": { "min": [0, 57, 0], "max": [27, 74, 16], "pivot": [14, 57, 8] },
+        "arm_r": { "min": [0, 31, 0], "max": [6, 56, 16], "pivot": [5, 54, 8] },
+        "arm_l": { "min": [21, 31, 0], "max": [27, 56, 16], "pivot": [23, 54, 8] },
+        "leg_r": { "min": [0, 0, 0], "max": [13, 29, 16], "pivot": [10.5, 29, 8] },
+        "leg_l": { "min": [14, 0, 0], "max": [27, 29, 16], "pivot": [17.5, 29, 8] }
+      }
+    },
+    "weapon.pistol": {
+      "voxel": {
+        "path": "models/weapons/pistol.vox",
+        "voxelSize": 0.01,
+        "glow": ["#5fe3f2"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [8.5, 9, 4.5],
+      "muzzle": [34, 16.5, 4.5],
+      "sight": [29.5, 21.5, 4.5]
+    },
+    "weapon.assault_rifle": {
+      "voxel": {
+        "path": "models/weapons/assault_rifle.vox",
+        "voxelSize": 0.01,
+        "glow": ["#5fe3f2"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [23.5, 8, 4.5],
+      "muzzle": [71, 16.5, 4.5],
+      "sight": [57.5, 27.5, 4.5]
+    },
+    "weapon.shotgun": {
+      "voxel": {
+        "path": "models/weapons/shotgun.vox",
+        "voxelSize": 0.01,
+        "glow": ["#5fe3f2"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [19, 10, 4.5],
+      "muzzle": [73, 15.5, 4.5],
+      "sight": [71.5, 19.5, 4.5]
+    },
+    "weapon.sniper": {
+      "voxel": {
+        "path": "models/weapons/sniper.vox",
+        "voxelSize": 0.01,
+        "glow": ["#5fe3f2"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [21, 9, 5.5],
+      "muzzle": [89, 13.5, 5.5],
+      "sight": [21, 22.5, 5.5]
+    },
+    "weapon.bubble_launcher": {
+      "primitive": {
+        "shape": "sphere",
+        "size": [0.25, 0.25, 0.25]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [0, -0.12, 0]
+    },
+    "weapon.beam": {
+      "primitive": {
+        "shape": "cylinder",
+        "size": [0.09, 0.5, 0.09]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 90],
+      "grip": [0, -0.06, 0.1]
+    },
+    "weapon.crossbow": {
+      "primitive": {
+        "shape": "box",
+        "size": [0.6, 0.08, 0.5]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [0, -0.05, 0.15]
+    },
+    "map.city": {
+      "voxel": {
+        "path": "models/maps/city.vox",
+        "voxelSize": 0.25,
+        "glow": ["#fff2c6"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [120, 1, 120]
+    },
+    "map.forest": {
+      "voxel": {
+        "path": "models/maps/forest.vox",
+        "voxelSize": 0.25,
+        "glow": ["#fff0bf"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [120, 1, 120]
+    },
+    "map.mine": {
+      "voxel": {
+        "path": "models/maps/mine.vox",
+        "voxelSize": 0.25,
+        "glow": ["#aeeaf2", "#b2edd1", "#c8f3f8", "#c9b5f5", "#cdf5e2", "#dccdf9", "#e6fbfd", "#e8fcf2", "#efe8fd", "#f6b6d6", "#f9cfe4", "#fde8f2", "#ffd3a8", "#fff0bf"]
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [104, 1, 104]
+    },
+    "map.city.breakables": {
+      "voxel": {
+        "path": "models/maps/city-breakables.vox",
+        "voxelSize": 0.25,
+        "glow": []
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [120, 1, 120]
+    },
+    "map.forest.breakables": {
+      "voxel": {
+        "path": "models/maps/forest-breakables.vox",
+        "voxelSize": 0.25,
+        "glow": []
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [120, 1, 120]
+    },
+    "map.mine.breakables": {
+      "voxel": {
+        "path": "models/maps/mine-breakables.vox",
+        "voxelSize": 0.25,
+        "glow": []
+      },
+      "scale": 1,
+      "rotation": [0, 0, 0],
+      "grip": [104, 1, 104]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "budgetSeconds": 60,
+  "budgetChoicesSeconds": [60, 90, 120, 150, 180, 210, 240, 270, 300],
+  "maxQuestionsChoices": [0, 3, 5, 8, 10, 15, 20],
+  "cardsPerTurn": 3,
+  "endCountdownSeconds": 5,
+  "rarities": [
+    {
+      "id": "common",
+      "label": "Commune",
+      "difficulties": [1, 2],
+      "costSeconds": 30
+    },
+    {
+      "id": "rare",
+      "label": "Rare",
+      "difficulties": [3],
+      "costSeconds": 45
+    },
+    {
+      "id": "epic",
+      "label": "Épique",
+      "difficulties": [4],
+      "costSeconds": 60
+    },
+    {
+      "id": "legendary",
+      "label": "Légendaire",
+      "difficulties": [5],
+      "costSeconds": 75
+    }
+  ],
+  "draw": {
+    "normalWeights": {
+      "common": 60,
+      "rare": 30,
+      "epic": 10,
+      "legendary": 0
+    },
+    "preferDistinctFamilies": true,
+    "excludeOwnedBonuses": true
+  },
+  "combos": {
+    "doubleOrNothing": {
+      "correctStreak": 3,
+      "rarityWeights": {
+        "common": 0,
+        "rare": 30,
+        "epic": 45,
+        "legendary": 25
+      },
+      "malusSeverity": "heavy"
+    },
+    "negative": {
+      "wrongStreak": 3,
+      "malusSeverity": "light"
+    }
+  }
+}

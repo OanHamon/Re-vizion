@@ -1,0 +1,85 @@
+{
+  "defaultMode": "duel",
+  "combatChoicesSeconds": [60, 90, 120, 150, 180, 210, 240, 270, 300, 0],
+  "players": {
+    "min": 2,
+    "choices": [2, 3, 4, 5],
+    "default": 2
+  },
+  "custom": {
+    "roundsChoices": [1, 3, 5, 7],
+    "livesChoices": [1, 2, 3, 5, 0]
+  },
+  "countdownSeconds": 3,
+  "roundEndSeconds": 5,
+  "respawnSeconds": 3,
+  "modes": [
+    {
+      "id": "duel",
+      "label": "Duel",
+      "rounds": 1,
+      "roundsToWin": 1,
+      "quizBeforeEachRound": true,
+      "respawn": false,
+      "winCondition": "last_alive",
+      "combatMaxSeconds": 180,
+      "editable": false,
+      "arena": "duel",
+      "lives": 1,
+      "maxPlayers": 2
+    },
+    {
+      "id": "best_of_3",
+      "label": "Best of 3",
+      "rounds": 3,
+      "roundsToWin": 2,
+      "quizBeforeEachRound": true,
+      "respawn": false,
+      "winCondition": "last_alive",
+      "combatMaxSeconds": 180,
+      "editable": false,
+      "arena": "duel",
+      "lives": 1
+    },
+    {
+      "id": "chrono",
+      "label": "Chrono",
+      "rounds": 1,
+      "roundsToWin": 1,
+      "quizBeforeEachRound": true,
+      "respawn": true,
+      "winCondition": "most_kills",
+      "combatMaxSeconds": 180,
+      "editable": false,
+      "arena": "duel",
+      "lives": 0
+    },
+    {
+      "id": "custom",
+      "label": "Personnalisé",
+      "rounds": 1,
+      "roundsToWin": 1,
+      "quizBeforeEachRound": true,
+      "respawn": false,
+      "winCondition": "last_alive",
+      "combatMaxSeconds": 180,
+      "editable": true,
+      "arena": "duel",
+      "lives": 1
+    },
+    {
+      "id": "training",
+      "label": "Entraînement",
+      "rounds": 1,
+      "roundsToWin": 1,
+      "quizBeforeEachRound": false,
+      "respawn": true,
+      "winCondition": "most_kills",
+      "combatMaxSeconds": 60,
+      "editable": false,
+      "arena": "training",
+      "lives": 0,
+      "maxPlayers": 2
+    }
+  ]
+}

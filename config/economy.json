@@ -1,0 +1,13 @@
+{
+  "currencyLabel": "pièces",
+  "match": {
+    "participation": { "label": "Partie jouée", "coins": 10 },
+    "kill": { "label": "Kills", "coins": 15 },
+    "headshotKill": { "label": "Kills à la tête", "coins": 5 },
+    "damage": { "label": "Dégâts", "coins": 1, "per": 10 },
+    "roundWin": { "label": "Manches gagnées", "coins": 20 },
+    "matchWin": { "label": "Victoire", "coins": 40 },
+    "accuracy": { "label": "Précision", "coins": 25, "minShots": 10 }
+  },
+  "maxPerMatch": 300
+}

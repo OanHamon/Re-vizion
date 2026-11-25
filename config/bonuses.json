@@ -1,0 +1,101 @@
+{
+  "families": [
+    { "id": "attack", "label": "Attaque" },
+    { "id": "defense", "label": "Défense" },
+    { "id": "mobility", "label": "Mobilité" },
+    { "id": "weapon", "label": "Arme" }
+  ],
+  "bonuses": [
+    { "id": "atk_damage_c", "family": "attack", "rarity": "common", "label": "Dégâts +10 %", "icon": "damage", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "damage", "op": "mul", "value": 1.1 }] },
+    { "id": "atk_magazine_c", "family": "attack", "rarity": "common", "label": "Chargeur +20 %", "icon": "ammo", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "magazineSize", "op": "mul", "value": 1.2 }] },
+    { "id": "atk_headshot_c", "family": "attack", "rarity": "common", "label": "Tête +10 %", "icon": "target", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "headshotMultiplier", "op": "mul", "value": 1.1 }] },
+
+    { "id": "atk_damage_r", "family": "attack", "rarity": "rare", "label": "Dégâts +20 %", "icon": "damage", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "damage", "op": "mul", "value": 1.2 }] },
+    { "id": "atk_laser_r", "family": "attack", "rarity": "rare", "label": "Viseur laser", "icon": "target", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "laserSight", "op": "set", "value": 1 }] },
+    { "id": "atk_magazine_r", "family": "attack", "rarity": "rare", "label": "Chargeur +50 %", "icon": "ammo", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "magazineSize", "op": "mul", "value": 1.5 }] },
+
+    { "id": "atk_damage_e", "family": "attack", "rarity": "epic", "label": "Dégâts +30 %", "icon": "damage", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "damage", "op": "mul", "value": 1.3 }] },
+    { "id": "atk_pierce_e", "family": "attack", "rarity": "epic", "label": "Perce-bouclier", "icon": "damage", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "armorPiercing", "op": "set", "value": 1 }] },
+    { "id": "atk_lifesteal_e", "family": "attack", "rarity": "epic", "label": "Vampire 15 %", "icon": "heart", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "lifesteal", "op": "add", "value": 0.15 }] },
+
+    { "id": "atk_damage_l", "family": "attack", "rarity": "legendary", "label": "Dégâts +50 %", "icon": "damage", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "damage", "op": "mul", "value": 1.5 }] },
+    { "id": "atk_headshot_l", "family": "attack", "rarity": "legendary", "label": "Tête × 2", "icon": "target", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "headshotMultiplier", "op": "mul", "value": 2 }] },
+    { "id": "atk_frenzy_l", "family": "attack", "rarity": "legendary", "label": "Frénésie", "icon": "ammo", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "damage", "op": "mul", "value": 1.25 }, { "stat": "magazineSize", "op": "mul", "value": 2 }] },
+
+    { "id": "def_shield_c", "family": "defense", "rarity": "common", "label": "Bouclier 15", "icon": "shield", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "shield", "op": "add", "value": 15 }] },
+    { "id": "def_helmet_c", "family": "defense", "rarity": "common", "label": "Casque léger", "icon": "helmet", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "headshotDamageTaken", "op": "mul", "value": 0.85 }] },
+    { "id": "def_regen_c", "family": "defense", "rarity": "common", "label": "Soin lent", "icon": "heart", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "healthRegen", "op": "add", "value": 1 }] },
+
+    { "id": "def_shield_r", "family": "defense", "rarity": "rare", "label": "Bouclier 30", "icon": "shield", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "shield", "op": "add", "value": 30 }] },
+    { "id": "def_helmet_r", "family": "defense", "rarity": "rare", "label": "Casque", "icon": "helmet", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "headshotDamageTaken", "op": "mul", "value": 0.7 }] },
+    { "id": "def_armor_r", "family": "defense", "rarity": "rare", "label": "Armure −10 %", "icon": "shield", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "damageTaken", "op": "mul", "value": 0.9 }] },
+
+    { "id": "def_shield_e", "family": "defense", "rarity": "epic", "label": "Bouclier 50", "icon": "shield", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "shield", "op": "add", "value": 50 }] },
+    { "id": "def_health_e", "family": "defense", "rarity": "epic", "label": "PV +25", "icon": "heart", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "maxHealth", "op": "add", "value": 25 }] },
+    { "id": "def_armor_e", "family": "defense", "rarity": "epic", "label": "Armure −20 %", "icon": "shield", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "damageTaken", "op": "mul", "value": 0.8 }] },
+
+    { "id": "def_shield_l", "family": "defense", "rarity": "legendary", "label": "Bouclier 100", "icon": "shield", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "shield", "op": "add", "value": 100 }] },
+    { "id": "def_helmet_l", "family": "defense", "rarity": "legendary", "label": "Casque intégral", "icon": "helmet", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "headshotDamageTaken", "op": "mul", "value": 0.5 }] },
+    { "id": "def_bubble_l", "family": "defense", "rarity": "legendary", "label": "Bulle 8 s", "icon": "shield", "durationSeconds": 8, "weapons": [], "effects": [{ "stat": "damageTaken", "op": "mul", "value": 0 }] },
+
+    { "id": "mob_speed_c", "family": "mobility", "rarity": "common", "label": "Vitesse +10 %", "icon": "speed", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "moveSpeed", "op": "mul", "value": 1.1 }] },
+    { "id": "mob_jump_c", "family": "mobility", "rarity": "common", "label": "Saut +15 %", "icon": "jump", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "jumpHeight", "op": "mul", "value": 1.15 }] },
+    { "id": "mob_air_c", "family": "mobility", "rarity": "common", "label": "Contrôle aérien", "icon": "jump", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "airControl", "op": "mul", "value": 1.3 }] },
+
+    { "id": "mob_speed_r", "family": "mobility", "rarity": "rare", "label": "Vitesse +20 %", "icon": "speed", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "moveSpeed", "op": "mul", "value": 1.2 }] },
+    { "id": "mob_dash_r", "family": "mobility", "rarity": "rare", "label": "Dash", "icon": "dash", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "dashCharges", "op": "add", "value": 1 }] },
+    { "id": "mob_jump_r", "family": "mobility", "rarity": "rare", "label": "Saut +30 %", "icon": "jump", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "jumpHeight", "op": "mul", "value": 1.3 }] },
+
+    { "id": "mob_speed_e", "family": "mobility", "rarity": "epic", "label": "Vitesse +30 %", "icon": "speed", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "moveSpeed", "op": "mul", "value": 1.3 }] },
+    { "id": "mob_double_jump_e", "family": "mobility", "rarity": "epic", "label": "Double saut", "icon": "jump", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "extraJumps", "op": "add", "value": 1 }] },
+    { "id": "mob_dash_e", "family": "mobility", "rarity": "epic", "label": "Double dash", "icon": "dash", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "dashCharges", "op": "add", "value": 2 }] },
+
+    { "id": "mob_speed_l", "family": "mobility", "rarity": "legendary", "label": "Vitesse +50 %", "icon": "speed", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "moveSpeed", "op": "mul", "value": 1.5 }] },
+    { "id": "mob_triple_jump_l", "family": "mobility", "rarity": "legendary", "label": "Triple saut", "icon": "jump", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "extraJumps", "op": "add", "value": 2 }] },
+    { "id": "mob_ghost_l", "family": "mobility", "rarity": "legendary", "label": "Fantôme", "icon": "dash", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "moveSpeed", "op": "mul", "value": 1.25 }, { "stat": "dashCharges", "op": "add", "value": 3 }] },
+
+    { "id": "wpn_reload_c", "family": "weapon", "rarity": "common", "label": "Rechargement rapide", "icon": "reload", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "reloadTime", "op": "mul", "value": 0.85 }] },
+    { "id": "wpn_spread_c", "family": "weapon", "rarity": "common", "label": "Dispersion −15 %", "icon": "scope", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "spread", "op": "mul", "value": 0.85 }] },
+    { "id": "wpn_pistol_c", "family": "weapon", "rarity": "common", "label": "Détente souple", "icon": "reload", "durationSeconds": null, "weapons": ["pistol"], "effects": [{ "stat": "fireRate", "op": "mul", "value": 1.1 }] },
+    { "id": "wpn_rifle_c", "family": "weapon", "rarity": "common", "label": "Recul réduit", "icon": "recoil", "durationSeconds": null, "weapons": ["assault_rifle"], "effects": [{ "stat": "recoil", "op": "mul", "value": 0.8 }] },
+    { "id": "wpn_shotgun_c", "family": "weapon", "rarity": "common", "label": "Portée +20 %", "icon": "scope", "durationSeconds": null, "weapons": ["shotgun"], "effects": [{ "stat": "damageFalloff", "op": "mul", "value": 0.8 }] },
+    { "id": "wpn_sniper_c", "family": "weapon", "rarity": "common", "label": "Zoom sniper", "icon": "scope", "durationSeconds": null, "weapons": ["sniper"], "effects": [{ "stat": "zoom", "op": "mul", "value": 1.5 }] },
+
+    { "id": "wpn_reload_r", "family": "weapon", "rarity": "rare", "label": "Rechargement éclair", "icon": "reload", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "reloadTime", "op": "mul", "value": 0.7 }] },
+    { "id": "wpn_firerate_r", "family": "weapon", "rarity": "rare", "label": "Cadence +10 %", "icon": "reload", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "fireRate", "op": "mul", "value": 1.1 }] },
+    { "id": "wpn_pistol_r", "family": "weapon", "rarity": "rare", "label": "Tir rapide", "icon": "reload", "durationSeconds": null, "weapons": ["pistol"], "effects": [{ "stat": "fireRate", "op": "mul", "value": 1.2 }] },
+    { "id": "wpn_rifle_r", "family": "weapon", "rarity": "rare", "label": "Recul −40 %", "icon": "recoil", "durationSeconds": null, "weapons": ["assault_rifle"], "effects": [{ "stat": "recoil", "op": "mul", "value": 0.6 }] },
+    { "id": "wpn_shotgun_r", "family": "weapon", "rarity": "rare", "label": "Plombs +2", "icon": "ammo", "durationSeconds": null, "weapons": ["shotgun"], "effects": [{ "stat": "pellets", "op": "add", "value": 2 }] },
+    { "id": "wpn_sniper_r", "family": "weapon", "rarity": "rare", "label": "Visée stable", "icon": "scope", "durationSeconds": null, "weapons": ["sniper"], "effects": [{ "stat": "spread", "op": "mul", "value": 0.5 }] },
+
+    { "id": "wpn_reload_e", "family": "weapon", "rarity": "epic", "label": "Rechargement instantané", "icon": "reload", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "reloadTime", "op": "mul", "value": 0.4 }] },
+    { "id": "wpn_firerate_e", "family": "weapon", "rarity": "epic", "label": "Cadence +20 %", "icon": "reload", "durationSeconds": null, "weapons": [], "effects": [{ "stat": "fireRate", "op": "mul", "value": 1.2 }] },
+    { "id": "wpn_pistol_e", "family": "weapon", "rarity": "epic", "label": "Pistolet automatique", "icon": "reload", "durationSeconds": null, "weapons": ["pistol"], "effects": [{ "stat": "fireRate", "op": "mul", "value": 1.4 }, { "stat": "recoil", "op": "mul", "value": 1.2 }] },
+    { "id": "wpn_rifle_e", "family": "weapon", "rarity": "epic", "label": "Stabilisateur", "icon": "recoil", "durationSeconds": null, "weapons": ["assault_rifle"], "effects": [{ "stat": "recoil", "op": "mul", "value": 0.3 }] },
+    { "id": "wpn_shotgun_e", "family": "weapon", "rarity": "epic", "label": "Chevrotine", "icon": "ammo", "durationSeconds": null, "weapons": ["shotgun"], "effects": [{ "stat": "pellets", "op": "add", "value": 4 }] },
+    { "id": "wpn_sniper_e", "family": "weapon", "rarity": "epic", "label": "Tir réflexe", "icon": "scope", "durationSeconds": null, "weapons": ["sniper"], "effects": [{ "stat": "fireRate", "op": "mul", "value": 1.5 }] },
+
+    { "id": "wpn_bubble_launcher_l", "family": "weapon", "rarity": "legendary", "label": "Lance-bulles", "icon": "star", "durationSeconds": null, "weapons": [], "grantsWeapon": "bubble_launcher", "effects": [] },
+    { "id": "wpn_beam_l", "family": "weapon", "rarity": "legendary", "label": "Rayon", "icon": "star", "durationSeconds": null, "weapons": [], "grantsWeapon": "beam", "effects": [] },
+    { "id": "wpn_crossbow_l", "family": "weapon", "rarity": "legendary", "label": "Arbalète", "icon": "star", "durationSeconds": null, "weapons": [], "grantsWeapon": "crossbow", "effects": [] }
+  ],
+  "maluses": [
+    { "id": "mal_atk_ammo_h", "family": "attack", "severity": "heavy", "label": "Munitions ÷ 2", "icon": "ammo", "durationSeconds": null, "effects": [{ "stat": "magazineSize", "op": "mul", "value": 0.5 }] },
+    { "id": "mal_atk_damage_h", "family": "attack", "severity": "heavy", "label": "Dégâts −30 %", "icon": "damage", "durationSeconds": null, "effects": [{ "stat": "damage", "op": "mul", "value": 0.7 }] },
+    { "id": "mal_def_health_h", "family": "defense", "severity": "heavy", "label": "PV −30", "icon": "heart", "durationSeconds": null, "effects": [{ "stat": "maxHealth", "op": "add", "value": -30 }] },
+    { "id": "mal_def_fragile_h", "family": "defense", "severity": "heavy", "label": "Fragile +30 %", "icon": "shield", "durationSeconds": null, "effects": [{ "stat": "damageTaken", "op": "mul", "value": 1.3 }] },
+    { "id": "mal_mob_speed_h", "family": "mobility", "severity": "heavy", "label": "Vitesse −30 %", "icon": "speed", "durationSeconds": null, "effects": [{ "stat": "moveSpeed", "op": "mul", "value": 0.7 }] },
+    { "id": "mal_mob_jump_h", "family": "mobility", "severity": "heavy", "label": "Pieds collés", "icon": "jump", "durationSeconds": 30, "effects": [{ "stat": "jumpHeight", "op": "mul", "value": 0 }] },
+    { "id": "mal_wpn_reload_h", "family": "weapon", "severity": "heavy", "label": "Rechargement × 2", "icon": "reload", "durationSeconds": null, "effects": [{ "stat": "reloadTime", "op": "mul", "value": 2 }] },
+    { "id": "mal_wpn_recoil_h", "family": "weapon", "severity": "heavy", "label": "Recul × 2", "icon": "recoil", "durationSeconds": null, "effects": [{ "stat": "recoil", "op": "mul", "value": 2 }] },
+
+    { "id": "mal_atk_ammo_l", "family": "attack", "severity": "light", "label": "Munitions −20 %", "icon": "ammo", "durationSeconds": null, "effects": [{ "stat": "magazineSize", "op": "mul", "value": 0.8 }] },
+    { "id": "mal_atk_damage_l", "family": "attack", "severity": "light", "label": "Dégâts −10 %", "icon": "damage", "durationSeconds": null, "effects": [{ "stat": "damage", "op": "mul", "value": 0.9 }] },
+    { "id": "mal_def_health_l", "family": "defense", "severity": "light", "label": "PV −10", "icon": "heart", "durationSeconds": null, "effects": [{ "stat": "maxHealth", "op": "add", "value": -10 }] },
+    { "id": "mal_def_fragile_l", "family": "defense", "severity": "light", "label": "Fragile +10 %", "icon": "shield", "durationSeconds": null, "effects": [{ "stat": "damageTaken", "op": "mul", "value": 1.1 }] },
+    { "id": "mal_mob_speed_l", "family": "mobility", "severity": "light", "label": "Vitesse −10 %", "icon": "speed", "durationSeconds": null, "effects": [{ "stat": "moveSpeed", "op": "mul", "value": 0.9 }] },
+    { "id": "mal_mob_jump_l", "family": "mobility", "severity": "light", "label": "Saut −20 %", "icon": "jump", "durationSeconds": null, "effects": [{ "stat": "jumpHeight", "op": "mul", "value": 0.8 }] },
+    { "id": "mal_wpn_reload_l", "family": "weapon", "severity": "light", "label": "Rechargement +25 %", "icon": "reload", "durationSeconds": null, "effects": [{ "stat": "reloadTime", "op": "mul", "value": 1.25 }] },
+    { "id": "mal_wpn_spread_l", "family": "weapon", "severity": "light", "label": "Dispersion +25 %", "icon": "scope", "durationSeconds": null, "effects": [{ "stat": "spread", "op": "mul", "value": 1.25 }] }
+  ]
+}

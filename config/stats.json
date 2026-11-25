@@ -1,0 +1,14 @@
+{
+  "scale": 100,
+  "difficultyRange": [1, 5],
+  "timedOutSpeed": 0,
+  "axes": [
+    { "id": "knowledge", "label": "Connaissance", "formula": "somme des difficultés des bonnes réponses ÷ somme des difficultés des questions répondues" },
+    { "id": "boldness", "label": "Audace", "formula": "(difficulté moyenne des questions tentées − difficultyRange[0]) ÷ (difficultyRange[1] − difficultyRange[0])" },
+    { "id": "speed", "label": "Vitesse de réponse", "formula": "moyenne de (1 − temps de réponse ÷ temps permis) ; une question au temps écoulé vaut timedOutSpeed" },
+    { "id": "accuracy", "label": "Précision", "formula": "tirs qui touchent ÷ tirs" },
+    { "id": "aggression", "label": "Agressivité", "formula": "dégâts infligés ÷ PV max de l'adversaire, cumulés sur les manches jouées" },
+    { "id": "consistency", "label": "Régularité", "formula": "plus longue série de bonnes réponses ÷ nombre de questions répondues" }
+  ],
+  "note": "Connaissance pondérée par la difficulté des questions"
+}

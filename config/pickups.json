@@ -1,0 +1,31 @@
+{
+  "chests": {
+    "label": "Coffre",
+    "asset": "prop.chest",
+    "openRadius": 2,
+    "questionDifficulties": [3],
+    "answerSeconds": 10,
+    "lockSecondsOnFail": 30,
+    "lockSecondsOnSuccess": 30,
+    "feedbackSeconds": 2,
+    "reward": { "grenades": 1 }
+  },
+  "grenade": {
+    "label": "Grenade",
+    "asset": "prop.grenade",
+    "startCount": 0,
+    "maxCarried": 2,
+    "throwCooldownSeconds": 0.8,
+    "throwSpeed": 12,
+    "throwUpBoost": 2.5,
+    "gravity": 18,
+    "radius": 0.12,
+    "bounce": 0.2,
+    "friction": 0.35,
+    "fuseSeconds": 2,
+    "damage": 60,
+    "blastRadius": 4.5,
+    "minFactor": 0,
+    "selfDamageFactor": 0.5
+  }
+}
