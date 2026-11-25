@@ -892,7 +892,7 @@ Entrées les plus récentes en haut.
 - **Points à valider ouverts** : V-060 ; V-058 et V-059 restent en attente.
 - **Reste à faire** :
   - Lot suivant : adresse du serveur réglable dans le client (`wss://…onrender.com`), message « Réveil du serveur… », reconnexion, build pour itch.io.
-  - Render déploie depuis un dépôt Git (GitHub ou GitLab) : le projet n'est pas encore un dépôt git. C'est à l'utilisateur de créer le dépôt et de pousser (Claude n'a pas le droit de pousser).
+  - Render déploie depuis un dépôt Git : dépôt GitHub fourni par l'utilisateur (`OanHamon/Re-vizion`). Git initialisé en local sur la branche de travail `v2` (pas `main`), dépôt distant relié, premier commit fait. Le `git push` reste à faire par l'utilisateur. `.impeccable/` et `.claude/settings.local.json` ajoutés au `.gitignore`.
   - Avertissement de Vite déjà présent avant ce lot (`configLoader: 'native'`, imports sans extension dans `vite.config.ts`) : sans effet aujourd'hui.
 
 ### Lot 19 · Cadrage de la V2 · 2026-11-25
